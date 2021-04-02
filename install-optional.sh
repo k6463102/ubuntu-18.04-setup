@@ -27,3 +27,6 @@ sudo ./install-tl
 echo 'export PATH=$PATH:/usr/local/texlive/2020/bin/x86_64-linux:/usr/local/lib/nodejs/node-v14.15.5-linux-x64/bin:/usr/local/go/bin' >> $HOME/.profile
 
 source $HOME/.profile
+
+sudo ln -s /usr/share/texmf/tex/latex/gnuplot /usr/local/texlive/texmf-local/tex/latex/gnuplot
+sudo env PATH="$PATH" mktexlsr
